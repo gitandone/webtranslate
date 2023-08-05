@@ -1,4 +1,4 @@
-const proxyUrl = "https://cors-anywhere.herokuapp.com/";
+const proxyUrl = "https://fathomless-cliffs-24896-d1ef41ca71c3.herokuapp.com/";
 const apiUrl = "https://translation.googleapis.com/v2/projects/webtranslateapp/translations/text:translate";
 
 document.getElementById("translationForm").addEventListener("submit", async (event) => {
