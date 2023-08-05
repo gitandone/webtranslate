@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABCBC</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class = "container"> 
+        <img class = "image" src="./translate.png" alt="Owl"/>  
+        <h1>Text-to-Text</h1>
+        <form id ="translationForm">
+            <label for="inputText">Enter a sentence:</label>
+            <br>
+            <textarea id="inputText" name="inputText" rows="4" cols="50" required></textarea>
+            <button type="submit">Translate</button>
+            <br><br>
+            <label for="outputText">Translated sentence:</label>
+            <br>
+            <textarea id="outputText" rows="4" cols="50" readonly></textarea>
+        </form>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
