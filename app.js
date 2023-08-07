@@ -9,7 +9,7 @@ document.getElementById("translationForm").addEventListener("submit", async (eve
   const translate = await fetch(proxyUrl + apiUrl, {
     method: "POST",
     headers: {
-      "Authorization": "d787328a97024eca1fa4e71b803aa78560ab1a22",
+      "Authorization": "AIzaSyBQ1uv1kQobCdpi68jKsHJ2UJqr-sBt2u4",
       "Content-Type": "application/json"
     },
     body: JSON.stringify({
