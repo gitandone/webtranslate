@@ -1,21 +1,19 @@
-const proxyUrl = "https://fathomless-cliffs-24896-d1ef41ca71c3.herokuapp.com/";
-const apiUrl = "https://translation.googleapis.com/v2/projects/webtranslateapp/translations/text:translate";
+
+const apiUrl = "https://translation.googleapis.com/language/translate/v2?key=AIzaSyBQ1uv1kQobCdpi68jKsHJ2UJqr-sBt2u4"
 
 document.getElementById("translationForm").addEventListener("submit", async (event) => {
   event.preventDefault();
 
   const text = document.getElementById("inputText").value;
 
-  const translate = await fetch(proxyUrl + apiUrl, {
+  const translate = await fetch(apiUrl, {
     method: "POST",
     headers: {
-      "Authorization": "AIzaSyBQ1uv1kQobCdpi68jKsHJ2UJqr-sBt2u4",
       "Content-Type": "application/json"
     },
     body: JSON.stringify({
-      "source": "en",
-      "target": "es",
-      "text": text
+      "target": "en",
+      "q": text,
     })
   });
 
